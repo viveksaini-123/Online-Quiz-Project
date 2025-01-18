@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Biology Quizzzzz!</title>
+    <link rel="stylesheet" type="text/css" href="Quiz.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background: rgb(252, 209, 21);
+        }
+    </style>
+    <div class=title>
+        <h1> Biology Quizzzzz!</h1>
+    </div>
+    <div class=questionBox>
+        <h1>1. What does DNA stand for? </h1>
+        <div row>
+            <button class=button id=1B onclick="QuestOneOne();QuestOneColor()">Deoxyribonucleic acid</button>
+        </div>
+        <div row>
+            <button class=button id=1C onclick="QuestOneZero();QuestOneColor()">Deoxycholic acid</button>
+        </div>
+        <div row>
+            <button class=button id=1A onclick="QuestOneZero();QuestOneColor()">Do not ask</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>2. Why do you think plants need sunlight? </h1>
+        <div row>
+            <button class=button id=2A onclick="QuestTwoZero();QuestTwoColor()">For Sunbathing</button>
+        </div>
+        <div row>
+            <button class=button id=2B onclick="QuestTwoOne();QuestTwoColor()">For Photosynthesis</button>
+        </div>
+        <div row>
+            <button class=button id=2C onclick="QuestTwoZero();QuestTwoColor()">For Flourescence</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>3. How does the cell generate energy? </h1>
+        <div row>
+            <button class=button id=3B onclick="QuestThreeOne();QuestThreeColor()">Through Kreb's cycle</button>
+        </div>
+        <div row>
+            <button class=button id=3A onclick="QuestThreeZero();QuestThreeColor()">Through Circuit training</button>
+        </div>
+        <div row>
+            <button class=button id=3C onclick="QuestThreeZero();QuestThreeColor()">Through Spin cycling</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>4. Where does the cell synthesize protiens? </h1>
+        <div row>
+            <button class=button id=4A onclick="QuestFourZero();QuestFourColor()">In the Lysosomes</button>
+        </div>
+        <div row>
+            <button class=button id=4B onclick="QuestFourOne();QuestFourColor()">In the Ribosomes</button>
+        </div>
+        <div row>
+            <button class=button id=4C onclick="QuestFourZero();QuestFourColor()">In the Sherlock Holmes</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>5. Who created The Theory of Evolution? </h1>
+        <div row>
+            <button class=button id=5A onclick="QuestFiveZero();QuestFiveColor()">Galileo</button>
+        </div>
+        <div row>
+            <button class=button id=5C onclick="QuestFiveZero();QuestFiveColor()">Garmin</button>
+        </div>
+        <div row>
+            <button class=button id=5B onclick="QuestFiveOne();QuestFiveColor()">Darwin</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>6. What do Omnivores eat? </h1>
+        <div row>
+            <button class=button id=6A onclick="QuestSixZero();QuestSixColor()">Fruit loops</button>
+        </div>
+        <div row>
+            <button class=button id=6C onclick="QuestSixZero();QuestSixColor()">Plants only</button>
+        </div>
+        <div row>
+            <button class=button id=6B onclick="QuestSixOne();QuestSixColor()">Plants and animals</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>7. How do giraffes fight? </h1>
+        <div row>
+            <button class=button id=7A onclick="QuestSevenZero();QuestSevenColor()">By foot</button>
+        </div>
+        <div row>
+            <button class=button id=7C onclick="QuestSevenZero();QuestSevenColor()">By food</button>
+        </div>
+        <div row>
+            <button class=button id=7B onclick="QuestSevenOne();QuestSevenColor()">By neck</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>8. How many legs do crabs have? </h1>
+        <div row>
+            <button class=button id=8B onclick="QuestEightOne();QuestEightColor()">Ten</button>
+        </div>
+        <div row>
+            <button class=button id=8A onclick="QuestEightZero();QuestEightColor()">Twenty</button>
+        </div>
+        <div row>
+            <button class=button id=8C onclick="QuestEightZero();QuestEightColor()">None</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>9. What is the longest nerve in the human body? </h1>
+        <div row>
+            <button class=button id=9A onclick="QuestNineZero();QuestNineColor()">The Cranial nerve</button>
+        </div>
+        <div row>
+            <button class=button id=9C onclick="QuestNineZero();QuestNineColor()">The Brainial nerve</button>
+        </div>
+        <div row>
+            <button class=button id=9B onclick="QuestNineOne();QuestNineColor()">The Sciatic nerve</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>10. Which animals are non-venomous? </h1>
+        <div row>
+            <button class=button id=10A onclick="QuestTenZero();QuestTenColor()">The Komodo dragons</button>
+        </div>
+        <div row>
+            <button class=button id=10B onclick="QuestTenOne();QuestTenColor()">The Pythons</button>
+        </div>
+        <div row>
+            <button class=button id=10C onclick="QuestTenZero();QuestTenColor()">The Cobras</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>11. What are diamonds and coal formed from? </h1>
+        <div row>
+            <button class=button id=11A onclick="QuestElevenZero();QuestElevenColor()">Nitrogen</button>
+        </div>
+        <div row>
+            <button class=button id=11B onclick="QuestElevenOne();QuestElevenColor()">Carbon</button>
+        </div>
+        <div row>
+            <button class=button id=11C onclick="QuestElevenZero();QuestElevenColor()">Jargon</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>12. What is true about tigers? </h1>
+        <div row>
+            <button class=button id=12A onclick="QuestTwelveZero();QuestTwelveColor()">They eat bananas</button>
+        </div>
+        <div row>
+            <button class=button id=12C onclick="QuestTwelveZero();QuestTwelveColor()">They can fly</button>
+        </div>
+        <div row>
+            <button class=button id=12B onclick="QuestTwelveOne();QuestTwelveColor()">They swim well</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>13. What is NH4OH? </h1>
+        <div row>
+            <button class=button id=13A onclick="QuestThirteenZero();QuestThirteenColor()">Lime water</button>
+        </div>
+        <div row>
+            <button class=button id=13B onclick="QuestThirteenOne();QuestThirteenColor()">Ammonia water</button>
+        </div>
+        <div row>
+            <button class=button id=13C onclick="QuestThirteenZero();QuestThirteenColor()">Chlorine water</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>14. What are pitcher plants? </h1>
+        <div row>
+            <button class=button id=14B onclick="QuestFourteenOne();QuestFourteenColor()">Man eating plants</button>
+        </div>
+        <div row>
+            <button class=button id=14A onclick="QuestFourteenZero();QuestFourteenColor()">Bean eating plants</button>
+        </div>
+        <div row>
+            <button class=button id=14C onclick="QuestFourteenZero();QuestFourteenColor()">Seed eating plants</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>15. What is the fastest bird ever? </h1>
+        <div row>
+            <button class=button id=15A onclick="QuestFifteenZero();QuestFifteenColor()">The Golden eagle</button>
+        </div>
+        <div row>
+            <button class=button id=15B onclick="QuestFifteenOne();QuestFifteenColor()">The Peregrine falcon</button>
+        </div>
+        <div row>
+            <button class=button id=15C onclick="QuestFifteenZero();QuestFifteenColor()">The Prairie falcon</button>
+        </div>
+    </div>
+    <div class=final>
+        <button id=Submit onclick="result();SubmitColor()">Submit</button>
+    </div>
+    <script src="Quiz.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Physics Quizzzzz!</title>
+    <link rel="stylesheet" type="text/css" href="Quiz.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background: rgb(250, 250, 66);
+        }
+    </style>
+    <div class=title>
+        <h1> Physics Quizzzzz!</h1>
+    </div>
+    <div class=questionBox>
+        <h1>1. What is Force= Mass X Acceleration? </h1>
+        <div row>
+            <button class=button id=1A onclick="QuestOneZero();QuestOneColor()">Newton's First Law</button>
+        </div>
+        <div row>
+            <button class=button id=1B onclick="QuestOneOne();QuestOneColor()">Newton's Second Law</button>
+        </div>
+        <div row>
+            <button class=button id=1C onclick="QuestOneZero();QuestOneColor()">Newton's Third Law</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>2. "For every action there is an equal and opposite reaction" is:</h1>
+        <div row>
+            <button class=button id=2A onclick="QuestTwoZero();QuestTwoColor()">Newton's First Law</button>
+        </div>
+        <div row>
+            <button class=button id=2C onclick="QuestTwoZero();QuestTwoColor()">Newton's Second Law</button>
+        </div>
+        <div row>
+            <button class=button id=2B onclick="QuestTwoOne();QuestTwoColor()">Newton's Third Law</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>3. What is the acceleration due to gravity? </h1>
+        <div row>
+            <button class=button id=3B onclick="QuestThreeOne();QuestThreeColor()">9.8 m/s^2</button>
+        </div>
+        <div row>
+            <button class=button id=3A onclick="QuestThreeZero();QuestThreeColor()">9.8 m/s</button>
+        </div>
+        <div row>
+            <button class=button id=3C onclick="QuestThreeZero();QuestThreeColor()">10.8 m/s</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>4. Define Force? </h1>
+        <div row>
+            <button class=button id=4B onclick="QuestFourOne();QuestFourColor()">It's Mass X Acceleration</button>
+        </div>
+        <div row>
+            <button class=button id=4A onclick="QuestFourZero();QuestFourColor()">It's Speed X Mass</button>
+        </div>
+        <div row>
+            <button class=button id=4C onclick="QuestFourZero();QuestFourColor()">It's Acceleration X Speed</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>5. E=mc^2 is: </h1>
+        <div row>
+            <button class=button id=5B onclick="QuestFiveOne();QuestFiveColor()">The Theory of Special Relativity</button>
+        </div>
+        <div row>
+            <button class=button id=5A onclick="QuestFiveZero();QuestFiveColor()">The Theory of Relative Specialty</button>
+        </div>
+        <div row>
+            <button class=button id=5C onclick="QuestFiveZero();QuestFiveColor()">The Relative Theatrical Specialty</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>6. Who invented the Galilean telescope? </h1>
+        <div row>
+            <button class=button id=6A onclick="QuestSixZero();QuestSixColor()">Isaac Newton</button>
+        </div>
+        <div row>
+            <button class=button id=6C onclick="QuestSixZero();QuestSixColor()">Hershey's</button>
+        </div>
+        <div row>
+            <button class=button id=6B onclick="QuestSixOne();QuestSixColor()">Galileo</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>7. What are meteorites made of? </h1>
+        <div row>
+            <button class=button id=7A onclick="QuestSevenZero();QuestSevenColor()">Salt and Pepper</button>
+        </div>
+        <div row>
+            <button class=button id=7B onclick="QuestSevenOne();QuestSevenColor()">Rock and/or Metal</button>
+        </div>
+        <div row>
+            <button class=button id=7C onclick="QuestSevenZero();QuestSevenColor()">Paper and/or Scissors</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>8. What is the speed of light? </h1>
+        <div row>
+            <button class=button id=8B onclick="QuestEightOne();QuestEightColor()">3*10^8 m/s</button>
+        </div>
+        <div row>
+            <button class=button id=8A onclick="QuestEightZero();QuestEightColor()">10^5 Newtons</button>
+        </div>
+        <div row>
+            <button class=button id=8C onclick="QuestEightZero();QuestEightColor()"> 5 cms</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>9. How far is the earth from the sun? </h1>
+        <div row>
+            <button class=button id=9B onclick="QuestNineOne();QuestNineColor()"> 152 million kms</button>
+        </div>
+        <div row>
+            <button class=button id=9A onclick="QuestNineZero();QuestNineColor()"> 100 cms</button>
+        </div>
+        <div row>
+            <button class=button id=9C onclick="QuestNineZero();QuestNineColor()"> 100 inches</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>10. What is the largest planet in our solar system? </h1>
+        <div row>
+            <button class=button id=10A onclick="QuestTenZero();QuestTenColor()">Earth</button>
+        </div>
+        <div row>
+            <button class=button id=10C onclick="QuestTenZero();QuestTenColor()">Saturn </button>
+        </div>
+        <div row>
+            <button class=button id=10B onclick="QuestTenOne();QuestTenColor()">Jupiter</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>11. What is the planet with the most moons? </h1>
+        <div row>
+            <button class=button id=11A onclick="QuestElevenZero();QuestElevenColor()">Jupiter</button>
+        </div>
+        <div row>
+            <button class=button id=11B onclick="QuestElevenOne();QuestElevenColor()">Saturn</button>
+        </div>
+        <div row>
+            <button class=button id=11C onclick="QuestElevenZero();QuestElevenColor()">Pluto</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>12. What is Pluto? </h1>
+        <div row>
+            <button class=button id=12B onclick="QuestTwelveOne();QuestTwelveColor()">An icy dwarf planet</button>
+        </div>
+        <div row>
+            <button class=button id=12A onclick="QuestTwelveZero();QuestTwelveColor()">An itsy bitsy spider</button>
+        </div>
+        <div row>
+            <button class=button id=12C onclick="QuestTwelveZero();QuestTwelveColor()">A huge tiger</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>13. What is the distance between two successive crests or troughs of a wave? </h1>
+        <div row>
+            <button class=button id=13A onclick="QuestThirteenZero();QuestThirteenColor()">Wavewidth</button>
+        </div>
+        <div row>
+            <button class=button id=13B onclick="QuestThirteenOne();QuestThirteenColor()">Wavelength</button>
+        </div>
+        <div row>
+            <button class=button id=13C onclick="QuestThirteenZero();QuestThirteenColor()">Circumference</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>14. What is the unit for measuring frequency? </h1>
+        <div row>
+            <button class=button id=14B onclick="QuestFourteenOne();QuestFourteenColor()">Hertz</button>
+        </div>
+        <div row>
+            <button class=button id=14A onclick="QuestFourteenZero();QuestFourteenColor()">Kirk</button>
+        </div>
+        <div row>
+            <button class=button id=14C onclick="QuestFourteenZero();QuestFourteenColor()">Birt</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>15. What is the unit for measuring the electromotive force ? </h1>
+        <div row>
+            <button class=button id=15A onclick="QuestFifteenZero();QuestFifteenColor()">Hertz</button>
+        </div>
+        <div row>
+            <button class=button id=15C onclick="QuestFifteenZero();QuestFifteenColor()">Bolts</button>
+        </div>
+        <div row>
+            <button class=button id=15B onclick="QuestFifteenOne();QuestFifteenColor()">Volts</button>
+        </div>
+    </div>
+    <div class=final>
+        <button id=Submit onclick="result();SubmitColor()">Submit</button>
+    </div>
+    <script src="Quiz.js"></script>
+</body>
+
+</html>

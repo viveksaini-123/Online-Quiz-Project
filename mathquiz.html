@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maths Quizzzzz!</title>
+    <link rel="stylesheet" type="text/css" href="Quiz.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background: rgb(255, 113, 255);
+        }
+    </style>
+    <div class=title>
+        <h1> Maths Quizzzzz!</h1>
+    </div>
+    <div class=questionBox>
+        <h1>1. What is the area of a triangle? </h1>
+        <div row>
+            <button class=button id=1B onclick="QuestOneOne();QuestOneColor()">Base*Height/2</button>
+        </div>
+        <div row>
+            <button class=button id=1A onclick="QuestOneZero();QuestOneColor()"> Height*Height/2</button>
+        </div>
+        <div row>
+            <button class=button id=1C onclick="QuestOneZero();QuestOneColor()">Base*Base/2</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>2. What is the square root of 144? </h1>
+        <div row>
+            <button class=button id=2A onclick="QuestTwoZero();QuestTwoColor()">Two</button>
+        </div>
+        <div row>
+            <button class=button id=2B onclick="QuestTwoOne();QuestTwoColor()">Twelve</button>
+        </div>
+        <div row>
+            <button class=button id=2C onclick="QuestTwoZero();QuestTwoColor()">Twenty Two</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>3. What is an acute angle? </h1>
+        <div row>
+            <button class=button id=3A onclick="QuestThreeZero();QuestThreeColor()">183 degrees</button>
+        </div>
+        <div row>
+            <button class=button id=3C onclick="QuestThreeZero();QuestThreeColor()">More than 90 degrees</button>
+        </div>
+        <div row>
+            <button class=button id=3B onclick="QuestThreeOne();QuestThreeColor()">Less than 90 degrees</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>4. What is the Pi of a circle? </h1>
+        <div row>
+            <button class=button id=4B onclick="QuestFourOne();QuestFourColor()">Ratio of circumference to diameter</button>
+        </div>
+        <div row>
+            <button class=button id=4A onclick="QuestFourZero();QuestFourColor()">Ratio of radius to diagonal</button>
+        </div>
+        <div row>
+            <button class=button id=4C onclick="QuestFourZero();QuestFourColor()">Ratio of diameter to circumference</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>5. What is a dodecagon? </h1>
+        <div row>
+            <button class=button id=5A onclick="QuestFiveZero();QuestFiveColor()">A two-sided shape</button>
+        </div>
+        <div row>
+            <button class=button id=5C onclick="QuestFiveZero();QuestFiveColor()">A fifteen-sided shape</button>
+        </div>
+        <div row>
+            <button class=button id=5B onclick="QuestFiveOne();QuestFiveColor()">A twelve-sided shape</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>6. What is differentiation? </h1>
+        <div row>
+            <button class=button id=6A onclick="QuestSixZero();QuestSixColor()">Finding anti-derivatives</button>
+        </div>
+        <div row>
+            <button class=button id=6B onclick="QuestSixOne();QuestSixColor()">Finding the derivatives</button>
+        </div>
+        <div row>
+            <button class=button id=6C onclick="QuestSixZero();QuestSixColor()">Finding nemo</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>7. What is 2*4*6/3+3? </h1>
+        <div row>
+            <button class=button id=7B onclick="QuestSevenOne();QuestSevenColor()">35</button>
+        </div>
+        <div row>
+            <button class=button id=7A onclick="QuestSevenZero();QuestSevenColor()">65</button>
+        </div>
+        <div row>
+            <button class=button id=7C onclick="QuestSevenZero();QuestSevenColor()">85</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>8. What is the cubic root of 216? </h1>
+        <div row>
+            <button class=button id=8B onclick="QuestEightOne();QuestEightColor()">6</button>
+        </div>
+        <div row>
+            <button class=button id=8A onclick="QuestEightZero();QuestEightColor()">8</button>
+        </div>
+        <div row>
+            <button class=button id=8C onclick="QuestEightZero();QuestEightColor()">5</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>9. What is the circumference of a semi-circle? </h1>
+        <div row>
+            <button class=button id=9A onclick="QuestNineZero();QuestNineColor()">2πr^2</button>
+        </div>
+        <div row>
+            <button class=button id=9C onclick="QuestNineZero();QuestNineColor()">2πr</button>
+        </div>
+        <div row>
+            <button class=button id=9B onclick="QuestNineOne();QuestNineColor()">πr</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>10. What is the cosecant of x? </h1>
+        <div row>
+            <button class=button id=10A onclick="QuestTenZero();QuestTenColor()">1/cos x</button>
+        </div>
+        <div row>
+            <button class=button id=10B onclick="QuestTenOne();QuestTenColor()">1/tan x</button>
+        </div>
+        <div row>
+            <button class=button id=10C onclick="QuestTenZero();QuestTenColor()">1/sin x</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>11. What is an eleven-sided polygon? </h1>
+        <div row>
+            <button class=button id=11B onclick="QuestElevenOne();QuestElevenColor()">Hendecagon</button>
+        </div>
+        <div row>
+            <button class=button id=11A onclick="QuestElevenZero();QuestElevenColor()">Pentadecagon</button>
+        </div>
+        <div row>
+            <button class=button id=11C onclick="QuestElevenZero();QuestElevenColor()"> Pentagon</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>12. What is the value of Cos 0 degrees?</h1>
+        <div row>
+            <button class=button id=12A onclick="QuestTwelveZero();QuestTwelveColor()">Zero</button>
+        </div>
+        <div row>
+            <button class=button id=12C onclick="QuestTwelveZero();QuestTwelveColor()">Two</button>
+        </div>
+        <div row>
+            <button class=button id=12B onclick="QuestTwelveOne();QuestTwelveColor()">One</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>13. What is the tan of x? </h1>
+        <div row>
+            <button class=button id=13A onclick="QuestThirteenZero();QuestThirteenColor()">Cos x/Sin x</button>
+        </div>
+        <div row>
+            <button class=button id=13C onclick="QuestThirteenZero();QuestThirteenColor()">Cotan x /Sin x</button>
+        </div>
+        <div row>
+            <button class=button id=13B onclick="QuestThirteenOne();QuestThirteenColor()">Sin x/Cos x</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>14. What is the absolute value of -45? </h1>
+        <div row>
+            <button class=button id=14A onclick="QuestFourteenZero();QuestFourteenColor()">35</button>
+        </div>
+        <div row>
+            <button class=button id=14B onclick="QuestFourteenOne();QuestFourteenColor()">45</button>
+        </div>
+        <div row>
+            <button class=button id=14C onclick="QuestFourteenZero();QuestFourteenColor()">55</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>15. What is the value of Pi? </h1>
+        <div row>
+            <button class=button id=15A onclick="QuestFifteenZero();QuestFifteenColor()">2.14</button>
+        </div>
+        <div row>
+            <button class=button id=15C onclick="QuestFifteenZero();QuestFifteenColor()">3.12</button>
+        </div>
+        <div row>
+            <button class=button id=15B onclick="QuestFifteenOne();QuestFifteenColor()">3.14</button>
+        </div>
+    </div>
+    <div class=final>
+        <button id=Submit onclick="result();SubmitColor()">Submit</button>
+    </div>
+    <script src="Quiz.js"></script>
+</body>
+
+</html>
